@@ -1,0 +1,110 @@
+# Customer-Segmentation-and-High-Value-Targeting-Strategy
+
+### Dashboard Link :[ https://app.powerbi.com/groups/me/reports/384d017e-e935-44dc-9e7d-1626c1a36de1/ReportSection](https://app.powerbi.com/MobileRedirect.html?reportPage=ReportSection&ctid=1a3ddaa9-ab7d-4271-a8cb-6f02d918906a&action=OpenReport&Context=share-report&bookmarkGuid=fcc4a2e8-a76f-4f30-bd97-dc08dcc409c2&groupObjectId=1242b923-7558-4be9-9c86-a09756b54983&reportObjectId=3b5fc3d0-0e93-40d6-8121-ef8e55033ae2&pbi_source=mobile_ios)
+
+
+Sprocket Central Pty Ltd , a medium size bikes & cycling accessories organisation.
+
+Primarily, Sprocket Central Pty Ltd needs help with its customer and transactions data. The organisation has a large dataset relating to its customers, but their team is unsure how to effectively analyse it to help optimise its marketing strategy. 
+
+
+
+The datasets:
+
+Customer Demographic 
+Customer Addresses
+Transactions data in the past 3 months
+You decide to start the preliminary data exploration and identify ways to improve the quality of Sprocket Central Pty Ltd’s data.
+
+### Problem Statement
+Targeting the right customer base for the company.
+
+
+ 
+ # Data Exploration:
+The necessary dataset from sprocket LTD. Below contains the summary of data made available to us and it would be highly appreciated if you could verify their accuracy. 
+
+![Screenshot 2024-03-23 192941](https://github.com/Gyamie/Customer-Segmentation-and-High-Value-Targeting-Strategy/assets/106616470/570d2578-6980-4433-afcc-423e55bef3f1)
+
+
+It always important to attend to the quality issues of the dataset. Therefore, below are ways to check the quality of the data and recommendations on ways to improve it and mitigate the issues.
+
+1.	The Customer ID for the transaction, customer Demographic and customer address dataset are different meaning there are no accuracy in the number of records provided.
+
+   Therefore, it would be helpful to check for those records and update them to solve the accuracy issues.
+
+   But for the meantime, the customer Demography table would be the main dataset for the analysis, to prevent any wrongful predictions.
+
+2.	There is inconsistency in the customer demographic and customer address where the gender and state attributes are not consistent in the various names stated. Example is VIC, VICtoria for the 
+   state Victoria.
+
+   So, the provision of a dropdown menu where individuals would have to select rather than spell it out themselves would help solve this issue.
+
+   As a result, one specific spelling would be used for each unique value to help provide clarity.
+
+3.	Also, there are issues of missing data which affects the completeness of the datasets which would be found in the transactions, New Customer List and Customer Demographic table. Examples are 
+   the values in the (job title, job industry, brand, and product line).
+
+   It would be best to either provide the missing values or delete the records with missing data since they make up less than 1% of the dataset in a table.
+
+4.	There are also issues of validity since some of the data in the various tables like New Customer List and Customer Demography have the wrong data type being used.
+   Therefore, it would be best to fixed them, so they do not affect the analysis for sprocket Ltd.
+
+
+## Data Transformations:
+  Joined the Customer Demographic, Customer Address, and  Transactions datasets.
+
+  Removed empty columns, duplicates, and irrelevant features.
+
+  Transformed data types for consistency.
+
+## Feature Engineering:
+  RFM (Recency, Frequency, Monetary) Scores:
+
+  Recency: How recently a customer made a purchase.
+
+  Frequency: How often a customer transacts.
+
+  Monetary: Total spending by the customer.
+
+## Demographic Segmentation:
+
+  Grouped customers by age, gender, and wealth segment.
+
+## Key insights:
+
+  Most customers are female with car ownership.
+
+  Mid-age group (40-59) prefers online orders.
+
+## Dominant sectors: 
+
+  Health, Manufacturing, and Financial.
+
+## Wealth Category:
+
+  Majority fall into the mass wealth segment.
+
+## Geographic Insights:
+
+   Concentrated in NSW and VIC states (highest purchase activity).
+
+   High-Value Customer Identification:
+
+   High-Value Customers: Those with high RFM scores.
+
+## Segment Insights:
+
+   Understand characteristics of each segment.
+
+   Tailor marketing efforts accordingly.
+
+## Targeting Strategy:
+
+   Prioritize high-value segments for personalized campaigns.
+
+   Focus on retention efforts for existing high-value customers.
+
+   Explore expansion opportunities in identified growth areas.
+
+
